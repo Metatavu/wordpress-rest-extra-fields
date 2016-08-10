@@ -3,7 +3,7 @@ defined( 'ABSPATH' ) or die( 'Access denied!' );
 
 /*
 Plugin name: WordPress Rest Extra Fields
-Plugin URI: http://example.com
+Plugin URI: https://github.com/Metatavu/wordpress-rest-extra-fields
 Description: Plugin which allows configuring rest-api to return some extra fields.
 Author: Metatavu Oy
 Author URI: https://metatavu.fi
