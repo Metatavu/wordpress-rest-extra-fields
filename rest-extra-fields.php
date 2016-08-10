@@ -15,7 +15,7 @@ if( !function_exists('register_extra_rest_fields') ) {
   add_action( 'rest_api_init', 'register_extra_rest_fields' );
   function register_extra_rest_fields() {
     register_rest_field( 'post',
-      'location',
+      'blm_latitude',
       array(
         'get_callback' => 'get_rest_meta_field',
         'update_callback' => null,
@@ -23,7 +23,15 @@ if( !function_exists('register_extra_rest_fields') ) {
       )
     );
     register_rest_field( 'post',
-      'open',
+      'blm_longitude',
+      array(
+        'get_callback' => 'get_rest_meta_field',
+        'update_callback' => null,
+        'schema' => null,
+      )
+    );
+    register_rest_field( 'post',
+      'blm_formatted_address',
       array(
         'get_callback' => 'get_rest_meta_field',
         'update_callback' => null,
