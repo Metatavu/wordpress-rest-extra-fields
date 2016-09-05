@@ -46,6 +46,14 @@ if( !function_exists('register_extra_rest_fields') ) {
         'schema' => null,
       )
     );
+    register_rest_field( 'post',
+      'open',
+      array(
+        'get_callback' => 'get_rest_meta_field',
+        'update_callback' => null,
+        'schema' => null,
+      )
+    );
   }
   
   function get_rest_meta_field( $object, $field_name, $request ) {
